@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background: #ededed;
+}
+
+.content{
+    width: 450px;
+    background-color: #ffe2e2;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 5px solid #ffc7c7;
+}
+
+.btn-lg{
+    background-color:#fff;
+    color: #ffc6c6;
+}
+
+.profile{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 20px;
+}
