@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\DB;
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','country','city','picture','api_token'
     ];
 
     /**
@@ -40,9 +40,22 @@ use Illuminate\Support\Facades\DB;
 
     public static function updateUserData(array $userData)
     {
+
         $returnUpdateData = DB::table('users')
             ->where('id', $userData["id"])
-            ->update(array('name' => $userData["name"], 'email'=> $userData["email"] ));
-          return response()->json(["status"=> "success"]);
+            ->update(['name' => $userData["name"], 'email'=> $userData["email"], 'country' => $userData["country"], 'city' => $userData["city"]]);
+
+        return response()->json(["status"=> "success"]);
     }
-}
+
+        public static function updateImg(array $userData)
+        {
+
+            $returnUpdateData = DB::table('users')
+                ->where('id', $userData["id"])
+                ->update(['picture' => $userData["picture"]]);
+
+            return response()->json(["status"=> "success"]);
+        }
+
+    }

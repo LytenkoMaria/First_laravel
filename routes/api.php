@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user/check', 'UserController@authCheck')->name('user.checkAuth');
+Route::get('/profile/user', 'ProfileController@getAuthUserData')->name('user.data')->middleware('auth');
+Route::post('/profile/update', 'ProfileController@updateUserData')->name('user.update')->middleware('auth');
+Route::post('/profile/update/img', 'ProfileController@updateImg')->name('user.updateImg')->middleware('auth');

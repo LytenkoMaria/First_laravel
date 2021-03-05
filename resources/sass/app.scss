@@ -20,14 +20,47 @@ body{
     border: 5px solid #ffc7c7;
 }
 
-.btn-lg{
+.btn-form{
     background-color:#fff;
     color: #ffc6c6;
 }
 
 .profile{
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 20px;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.country-city-form-reg {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.country-city-form-profile {
+    width: 76%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.reset {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -130px;
+    font-size: 14px;
+}
+
+.load-img {
+    width: 280px;
+    font-size: 13px;
+    margin-left: 10%;
+    color: #e27676;
+}
+
+.profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 10px;
 }

@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d2a8cc0-61d1-44c6-bcd1-fed76cf20e6d" name="Default Changelist" comment="" />
+    <list default="true" id="0d2a8cc0-61d1-44c6-bcd1-fed76cf20e6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/usersProfilePicture/Standart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/NewPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/OLX.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ResetPassword.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/first_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/first_laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Registration.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Registration.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +47,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="package.json" />
         <option value="Vue Single File Component" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,6 +157,7 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ovNLmoxTp24FH4Hxl1qFHoaDZW" />
@@ -136,20 +173,30 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\public\images\usersProfilePicture" />
+      <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\public\images" />
+      <recent name="W:\domains\first_laravel\app\Models" />
+      <recent name="W:\domains\first_laravel\resources\views\layouts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="W:\domains\first_laravel\app\Http\Controllers" />
       <recent name="W:\domains\first_laravel\resources\js\components" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="W:\domains\first_laravel\app\Models" />
-      <recent name="W:\domains\first_laravel\resources\views\layouts" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.ResetPasswordController.php">
+    <configuration name="ResetPasswordController.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/first_laravel/Http/Controllers/Auth/ResetPasswordController.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.ResetPasswordController.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -162,7 +209,14 @@
       <workItem from="1614163051746" duration="13244000" />
       <workItem from="1614237321622" duration="30864000" />
       <workItem from="1614327584586" duration="23169000" />
-      <workItem from="1614504973581" duration="8259000" />
+      <workItem from="1614504973581" duration="11146000" />
+      <workItem from="1614586575517" duration="22822000" />
+      <workItem from="1614672625547" duration="23718000" />
+      <workItem from="1614701982331" duration="1767000" />
+      <workItem from="1614753996913" duration="24423000" />
+      <workItem from="1614793736390" duration="85000" />
+      <workItem from="1614845731906" duration="24390000" />
+      <workItem from="1614929103680" duration="17909000" />
     </task>
     <servers />
   </component>
@@ -170,13 +224,37 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1614349107880">
+    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614793781411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614349107880" />
+    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614793781411" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614764069641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614764069641" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1614793819774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614793819774" />
+    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1614944678993">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1614944678993" />
+    <state x="454" y="130" width="1096" height="781" maximized="true" key="dock-window-1" timestamp="1614594471464">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="454" y="130" width="1096" height="781" maximized="true" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1614594471464" />
     <state x="477" y="11" width="581" height="801" key="find.popup" timestamp="1614349891467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1614349891467" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1614849691812">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614849691812" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614857684971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614857684971" />
   </component>
 </project>

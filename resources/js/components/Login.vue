@@ -11,7 +11,8 @@
                 </div>
                     <input v-model="form.email" required type="email" class=" form-control mt-4" name="email"  autocomplete="email" placeholder="Email">
                     <input v-model="form.password" required type="password" class=" form-control mt-4" name="password"  placeholder="password">
-                    <button  type="submit" name="submit" class="btn-lg sign-in m-3 btn"><strong>Sign in</strong></button>
+                     <router-link to="/reset" class="reset" >Forgot password?</router-link>
+                    <button  type="submit" name="submit" class="btn-form sign-in m-4 btn"><strong>Sign in</strong></button>
         </form>
     </div>
 
@@ -35,11 +36,10 @@ export default {
             let vm = this
             axios.post('/login', this.form)
                 .then(function (response) {
-                    console.log(response);
                     window.location.href ='home';
                 })
                 .catch(function (error) {
-                    console.log(error.response.data.errors);
+                    console.log(error);
                     vm.user_errors = error.response.data.errors;
                 })
         }

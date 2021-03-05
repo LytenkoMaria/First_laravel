@@ -5,13 +5,12 @@
  */
 
 require('./bootstrap');
-
 window.Vue = require('vue');
 
+import App from './components/App.vue';
 // import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-window.Vue.use(VueRouter)
+Vue.use(VueRouter)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -23,29 +22,29 @@ window.Vue.use(VueRouter)
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-
+//
 const Prof = Vue.component('profile', require('./components/Profile.vue').default);
 const Login = Vue.component('login', require('./components/Login.vue').default);
 const Registration = Vue.component('registration', require('./components/Registration.vue').default);
+const Reset = Vue.component('resetPassword', require('./components/ResetPassword.vue').default);
+const NewPassword = Vue.component('newPassword', require('./components/NewPassword.vue').default);
 
 const routes = [
     { path: '/profile', component:  Prof},
-    { path: '/login', component:  Login},
-    { path: '/registration', component:  Registration}
+    { name: 'login', path: '/login', component:  Login},
+    { name: 'registration', path: '/registration', component:  Registration},
+    { path: '/reset', component:  Reset},
+    { path: '/password/reset/:token', component:  NewPassword},
 ]
-
 
 
 const router = new VueRouter({
     mode: 'history',
-    routes // short for `routes: routes`
-})
+    routes: routes // short for `routes: routes`
+});
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 const app = new Vue({
-    router
-}).$mount('#app')
+    el: '#app',
+    router: router,
+    render: h => h(App),
+});
