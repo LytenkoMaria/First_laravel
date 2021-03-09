@@ -28,6 +28,7 @@ const Login = Vue.component('login', require('./components/Login.vue').default);
 const Registration = Vue.component('registration', require('./components/Registration.vue').default);
 const Reset = Vue.component('resetPassword', require('./components/ResetPassword.vue').default);
 const NewPassword = Vue.component('newPassword', require('./components/NewPassword.vue').default);
+const Announcements = Vue.component('OLX', require('./components/OLX.vue').default);
 
 const routes = [
     { path: '/profile', component:  Prof},
@@ -35,6 +36,7 @@ const routes = [
     { name: 'registration', path: '/registration', component:  Registration},
     { path: '/reset', component:  Reset},
     { path: '/password/reset/:token', component:  NewPassword},
+    { path: '/announcements', component:  Announcements},
 ]
 
 

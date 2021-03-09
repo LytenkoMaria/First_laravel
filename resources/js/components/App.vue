@@ -17,7 +17,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <router-link class="dropdown-item" to="/profile">Settings</router-link>
-
+                                <router-link class="dropdown-item" to="/announcements">Announcements</router-link>
                                 <a class="dropdown-item" v-on:click.prevent="logout()">Logout</a>
                                 <input type="hidden" name="_token" v-model="csrf">
 
