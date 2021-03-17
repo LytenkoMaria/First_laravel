@@ -20,6 +20,7 @@ class ProfileController extends Controller
     public function getAuthUserData()
     {
         $user = Auth::user();
+
         return response()->json(["user" => $user]);
     }
 

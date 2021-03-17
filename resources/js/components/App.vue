@@ -13,7 +13,7 @@
 
                         <li   v-if="isHidden" class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                fffff
+                                menu
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <router-link class="dropdown-item" to="/profile">Settings</router-link>
@@ -52,7 +52,7 @@ export default {
     methods: {
         logout: function (e) {
             let vm = this
-            axios.post('logout', this.csrf )
+            axios.post('/logout', this.csrf )
                 .then(function (response) {
                     vm.isHidden = true;
                     window.location.href = '/';

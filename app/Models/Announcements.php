@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -27,19 +28,18 @@ class Announcements extends Model
      */
 
 
-/*
-    protected function create(array $data)
+    protected function getAnnouncements()
     {
-        return Announcements::create([
-            'advertisements_name' => $data['advertisements_name'],
-            'price' => $data['price'],
-            'year' => $data['year'],
-            'type_of_fuel' => $data['type_of_fuel'],
-            'mileage' => $data['mileage'],
-            'description' => $data['description'],
-            'link' =>  $data['link'],
-            'date_announcement' =>  $data['date_announcement'],
-             'images_url' =>  $data['images_url'],
-        ]);
-    }*/
+        $announcements = DB::table('announcements')->get();
+
+        return response()->json(["announcements"=> $announcements]);
+    }
+
+    protected function getAnnouncement(Request $request)
+    {
+        $announcement = DB::table('announcements')->where('id', $request["id"])->first();
+
+        return response()->json(["announcement"=> $announcement]);
+    }
+
 }

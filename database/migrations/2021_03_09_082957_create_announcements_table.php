@@ -21,7 +21,7 @@ class CreateAnnouncementsTable extends Migration
             $table->string('year');
             $table->string('type_of_fuel');
             $table->string('mileage');
-            $table->string('description');
+            $table->text('description');
             $table->string('link');
             $table->dateTime('date_announcement', $precision = 0);
         });

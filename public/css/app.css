@@ -11002,3 +11002,179 @@ body {
   margin-bottom: 10px;
 }
 
+.announcement {
+  height: 140px;
+  width: 90%;
+  background-color: #ededed;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.offer-img {
+  margin-bottom: -30px;
+  height: 120px;
+  width: 160px;
+}
+
+.olx-advertisements-name {
+  margin-left: 20px;
+  position: absolute;
+  color: #000000;
+  text-decoration: none !important;
+}
+
+.olx-data {
+  left: 72%;
+  font-size: 13px;
+  position: absolute;
+}
+
+.olx-price {
+  top: 60px;
+  left: 20px;
+  position: relative;
+  background-color: #aea7a7;
+  padding: 5px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+label.olx {
+  margin-left: 40%;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  background-color: #388287;
+}
+
+.offer {
+  background-color: #dadada;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+}
+
+.announcement-img {
+  margin-left: 75%;
+  max-height: 500px;
+  width: 350px;
+}
+
+.announcement-name {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.announcement-data {
+  font-size: 20px;
+  background-color: cadetblue;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.characteristic {
+  margin: auto;
+  width: 90%;
+  padding-left: 10%;
+}
+
+.announcement-characteristic {
+  padding: 10px;
+  border: 5px solid darkcyan;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 900;
+  background-color: #dadada;
+}
+
+.description {
+  background-color: #609899;
+  padding: 10px;
+}
+
+textarea.description {
+  padding: 15px;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  height: 300px;
+  background-color: #ffffff;
+}
+
+.text-description {
+  font-size: large;
+  font-weight: 900;
+}
+
+textarea.new-comment {
+  padding: 15px;
+  margin-left: 10px;
+  width: 73%;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.btn-comments {
+  color: white;
+  width: 100px;
+  height: 48px;
+  top: -15px;
+  position: relative;
+  background-color: #609899;
+}
+
+.comments-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+}
+
+.parent-comment-img {
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+
+.parent-comment {
+  outline: none;
+  resize: none;
+  background-color: #ffffff;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+textarea.parent-comment {
+  width: 70%;
+  height: 40px;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
+.btn-parent-comment {
+  height: 40px !important;
+}
+
+label.parent-comment {
+  margin-left: 20px;
+}
+
+.sizing {
+  overflow: scroll !important;
+}
+
+.back {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+

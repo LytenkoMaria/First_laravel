@@ -47,9 +47,6 @@ class ParsingDataCommand extends Command
             ->pluck('date_announcement')
             ->first();
         $this->last_date_bd = date("Y-m-d H:i:s",strtotime($last_date_bd));
-        //print_r($last_date_bd);
-
-
         $client = new Client();
         $crawler = $client->request('GET', 'https://www.olx.ua/transport/legkovye-avtomobili/daewoo/?search%5Border%5D=created_at%3Adesc');
         $crawler->filter('.offer-wrapper')->each(function ($node) {
@@ -80,6 +77,7 @@ class ParsingDataCommand extends Command
                         });
                         $this->mas['description'] = $announcement->filter('#textContent')->text();
                         Announcements::create($this->mas);
+                        echo "good";
                     }
         });
 

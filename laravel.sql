@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 09 2021 г., 17:49
+-- Время создания: Мар 17 2021 г., 15:45
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -45,20 +45,65 @@ CREATE TABLE `announcements` (
 --
 
 INSERT INTO `announcements` (`id`, `images_url`, `advertisements_name`, `price`, `year`, `type_of_fuel`, `mileage`, `description`, `link`, `date_announcement`) VALUES
-(432, 'https://ireland.apollo.olxcdn.com:443/v1/files/80czbzuvykdv-UA/image;s=644x461', 'Daewoo Lanos поляк', '83 313 грн.', '2008', 'Газ / бензин', '218 000 км', 'Ланос польской сбоки, ГУР, в ДТП не учавствовал. На фото почему-то он весь рябой, в жизни он весть в одном цвете! Салон чистый, не прокурен. Днище, пороги(делались), лонжероны идеал. Гнили и ржавчины нет. ГБО 3, не вписано. Впереди зимняя резина(вторая зима) сзади новая всесезока. Свежее масло кастрол 10w-40, новый антифриз Hepu, новый декстрон в ГУРе, свежий ГРМ, свечи и т. д. ГУР не воет. Тонировка, фаркоп с проводкой, aux, usb. Мотор бодрый, масло не ест, сухой(не намытый). Пробег реальный. По кпп вопросов нет. Ходовка обслужена. Экономный авто, по городу расход газа 10л. Работает как на газу так и на бензине. С документами порядок, любой вид переоформления. Торг за наличные присутствует. Возможен обмен на авто дешевле и старше, желательно на газу. От авто не избавляюсь, продажа не спешная, просто нужны деньги.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-polyak-IDKjB9v.html#924372e4d1', '2021-03-09 15:57:00'),
-(433, 'https://ireland.apollo.olxcdn.com:443/v1/files/djnmu2ga4iy33-UA/image;s=644x461', 'Продам сенс газ 4 поколения', '58 874 грн.', '2007', 'Газ / бензин', '290 км', 'Продам део сенс ,установлен для удобства и економии газ 4 поколения, кап ремонт мотора 30 тыс назад, ходовая двигатель кпп в порядке, пороги целые ,есть рыжики по кузову, без дыр,новая резина 2 тыс пробега, Лед фары, документы в полном порядке, переоформление в мрео за ваш счёт. Торг мин. Звоните.', 'https://www.olx.ua/obyavlenie/prodam-sens-gaz-4-pokoleniya-IDKW5uL.html#924372e4d1', '2021-03-09 15:54:00'),
-(468, 'https://ireland.apollo.olxcdn.com:443/v1/files/0i9p8j6p79m03-UA/image;s=644x461', 'продам ЛАНОС 2003', '88 867 грн.', '2003', 'Газ / бензин', '250 000 км', 'Продаю свой автомобиль! На полном ходу. Вложений не требует. Все работает без нареканий. Салон чистый, не прокуренный. Установлен надежный двигатель 1.5, гидроуселитель руля, газ(2). Переоборудование узаконено. Автомобиль используется каждый день. Не такси!!! Продаю по причине приобретения другого авто, по этому обязательно с перерегистрацией. Автомобилем будете довольны. Дополнительная информация по телефону. Незначительный торг у автомобиля.', 'https://www.olx.ua/obyavlenie/prodam-lanos-2003-IDKSYF2.html#924372e4d1;promoted', '2021-03-09 16:19:00'),
-(469, 'https://ireland.apollo.olxcdn.com:443/v1/files/co9g6d6p15yi-UA/image;s=644x461', 'Продам Daewoo Lanos sx', '91 644 грн.', '2007', 'Газ / бензин', '275 км', 'продам авто в хорошем состоянии,польской сборки. много чего сделано. всё исправно работает. Ржавчины и гнили нет нигде. Двигатель и коробка работают на 5 ,вложений не требует , Машиной останетесь довольны. больше информации по телефону.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-lanos-sx-IDIKJP1.html#924372e4d1', '2021-03-09 16:15:00'),
-(470, 'https://ireland.apollo.olxcdn.com:443/v1/files/saemd3omcsz31-UA/image;s=644x461', 'Продам daewoo nexia', '69 427 грн.', '2008', 'Газ / бензин', '200 000 км', 'Продам машину на полнои ходу,газ 4е поколение, поварена,масло поменяно,есть страховка возможен обмен', 'https://www.olx.ua/obyavlenie/prodam-daewoo-nexia-IDJgmIN.html#924372e4d1', '2021-03-09 16:11:00'),
-(471, 'https://ireland.apollo.olxcdn.com:443/v1/files/zpo0vn3itefo-UA/image;s=644x461', 'Автомобиль Дэу Матиз', '80 000 грн.', '2007', 'Бензин', '176 000 км', 'Автомобиль Дэу матиз. Ухоженная, гаражное хранение. В отличном состоянии. Торг уместен.Два ключа в комплекте. Реальному покупателю в подарок зимняя резина на дисках.', 'https://www.olx.ua/obyavlenie/avtomobil-deu-matiz-IDJu1lr.html#924372e4d1', '2021-03-09 16:09:00'),
-(472, 'https://ireland.apollo.olxcdn.com:443/v1/files/0flbt41nsojn-UA/image;s=644x461', 'Продам Ланос на Автомате', '144 409 грн.', '2012', 'Бензин', '47 км', 'Продам Отличный автомобиль . Машина Очень надежная и не прихотливая . Двигатель на эту модель устанавливался с Опеля Астры GM , коробка установлена Японской компанией Aisin , поэтому получаем надежные узлы с дешевым обслуживанием в дальнейшем . Очень хорошая комплектация : Кондиционер , АБС , Электро-стеклоподъемники , Гидроуселитель руля , Подушка безопасности , электро подогрев водительского и пассажирского сиденья , Электро корректор фар . Дополнительно было установлено : Двух сторонняя сигнализация с обратной связью , Тонировка , Литые диски , дорогой задний парк-троник. У машины действительно Оригинальный пробег , готова к проверкам на любом СТО . более подробно расскажу по телефону.', 'https://www.olx.ua/obyavlenie/prodam-lanos-na-avtomate-IDKRHVk.html#924372e4d1;promoted', '2021-03-09 16:05:00'),
-(473, 'https://ireland.apollo.olxcdn.com:443/v1/files/k4yo99wpzmla2-UA/image;s=644x461', 'Lanos 2008 года очень Срочно', '61 096 грн.', '2008', 'Газ / бензин', '194 000 км', 'Очень срочно продается Ланос. Авто в хорошем состоянии, с момента плкупки плановое обслуживание проходила вовремя. Стоит Газ ваисан, в тп. Зимняя резина новая, летняя в подарок. Только полное перееоформления. Смотреть Киев м. Осокорки. Низкая цена продиктована срочностю продажи, актуальна до выходных. Кому интересно - звоните. + 380 - Показать номер -', 'https://www.olx.ua/obyavlenie/lanos-2008-goda-ochen-srochno-IDKWaT5.html#924372e4d1', '2021-03-09 16:01:00'),
-(474, 'https://ireland.apollo.olxcdn.com:443/v1/files/iddh6vfdzm5l1-UA/image;s=644x461', 'Daewoo lanos 1.5', '61 096 грн.', '1998', 'Газ / бензин', '247 000 км', 'В отличном состоянии, кроме дверей и порогов. Родной пробег. Авто на мне по техпаспорту.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-1-5-IDKW92y.html#924372e4d1', '2021-03-09 16:28:00'),
-(475, 'https://ireland.apollo.olxcdn.com:443/v1/files/b94q0v9a7ib7-UA/image;s=644x461', 'Daewoo Lanos', '97 198 грн.', '2006', 'Газ / бензин', '247 000 км', 'Отличная машина для повседневной езды! ГАЗ, ГУР Стеклоподъемники! Выглядит очень достойно, чистый не прокуренный салон! В машине все работает! Разумный торг возле машины!', 'https://www.olx.ua/obyavlenie/daewoo-lanos-IDKCbkE.html#924372e4d1', '2021-03-09 16:24:00'),
-(476, 'https://ireland.apollo.olxcdn.com:443/v1/files/fid20ty1yk791-UA/image;s=644x461', 'Daewoo Nexia 1,5 газ/бензин', '54 153 грн.', '2008', 'Газ / бензин', '150 000 км', 'Daewoo Nexia 1.5 газ/бенз, поменял колодки, диски тормозные передние,тросик ручника, Троил газ заехал к газовщику настроил, поменял фильтр,клапан,резинки.едет хорошо на бензине и на газу) по двигателю все нормально. ПРОСЬБА перекупов и халявщиков не тревожить!!торг минимальный !!! документы в порядке машина переоформляеться! звоните договоримся)) возможно обмен ))для особенных за 1500$ не отдам проходите мимо !!!!', 'https://www.olx.ua/obyavlenie/daewoo-nexia-1-5-gaz-benzin-IDKxgpS.html#924372e4d1;promoted', '2021-03-09 16:24:00'),
-(477, 'https://ireland.apollo.olxcdn.com:443/v1/files/hpbjauruha1u1-UA/image;s=644x461', 'Деу Ланос 2007.', '51 376 грн.', '2007', 'Газ / бензин', '200 000 км', 'На отличном ходу. Без дтп. Учёт постоянный. Газ евро 4. Макеевка.. +380714168345', 'https://www.olx.ua/obyavlenie/deu-lanos-2007-IDKWbW9.html#924372e4d1', '2021-03-09 16:24:00'),
-(478, 'https://ireland.apollo.olxcdn.com:443/v1/files/zed1prteak402-UA/image;s=644x461', 'Ланос пикап', '65 262 грн.', '2010', 'Газ / бензин', '240 000 км', 'Ланос пикап переделан в пассажир. Сидения Ниссан, диски Ниссан, стойки газ-масло, серворуль. Другие вопросы по телефону.', 'https://www.olx.ua/obyavlenie/lanos-pikap-IDKCygG.html#924372e4d1', '2021-03-09 16:24:00'),
-(479, 'https://ireland.apollo.olxcdn.com:443/v1/files/hs97z9fi2f3p2-UA/image;s=644x461', 'DAEWOO LANOS газ/бензин', '91 644 грн.', '2007', 'Газ / бензин', '162 000 км', 'Авто в хорошому технічному стані. Капіталовкладень не потребує. Встановлені протитуманні фари. Салон акуратний, не затертий не прокурений. Поміняні всі ремні, помпа, натяжний ролик. По ходовій все добре. Встановлено ГБО 4 покоління економна. Є сервісна книжка. Я другий власник авто. Авто використовувалось для сімї. Всі інші питання по телефону.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-gaz-benzin-IDHOq3E.html#924372e4d1', '2021-03-09 16:23:00');
+(1, 'https://ireland.apollo.olxcdn.com:443/v1/files/bv1zzi6vaurn-UA/image;s=644x461', 'Продам DAEWOO/Lanos', '90 214 грн.', '2007', 'Бензин', '120 169 км', 'Машина у хорошому стані. Є зимові і літні майже нові шини. Чохли нові на сидіння. Обслуговування машини робилося, як для себе. Пробіг рідний, салон чистий доглянутий. Двигун працює рівно. Була у ДТП, професійний ремонт.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-lanos-IDKVBVH.html#924372e4d1;promoted', '2021-03-11 17:56:00'),
+(2, 'https://ireland.apollo.olxcdn.com:443/v1/files/qtav3r4jugcn3-UA/image;s=644x461', 'Продам Daewoo Sens 2015 року', '108 257 грн.', '2015', 'Бензин', '47 км', 'Продам Daewoo Sens в идеальном состоянии. Автомобиль не битый, не крашен, все в родной краске. Один владелец с автосалона. Обслуживался вовремя, вложений не требует. Состояние нового авто.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-sens-2015-roku-IDKVsjA.html#924372e4d1;promoted', '2021-03-11 14:41:00'),
+(3, 'https://ireland.apollo.olxcdn.com:443/v1/files/t0meowx8v7w01-UA/image;s=644x461', 'Продам автомобіль, стан нормальний, сів та поїхав', '57 500 грн.', '2006', 'Газ / бензин', '231 000 км', 'Продам або обміняю на авто, на ділянку або мото', 'https://www.olx.ua/obyavlenie/prodam-avtomobl-stan-normalniy-sv-ta-pohav-IDKV5N5.html#924372e4d1;promoted', '2021-03-10 21:55:00'),
+(4, 'https://ireland.apollo.olxcdn.com:443/v1/files/gsjxg3u5vv432-UA/image;s=644x461', 'Продам Daewoo Lanos', '77 723 грн.', '1998', 'Газ / бензин', '244 355 км', 'Продам свой автомобиль . Чистый кореец . Машина в хорошем техническом состоянии работает хорошо как на бензине так и на газу сел и поехал. На фото видно что есть нюансы по кузову , не было времени ими заниматься , но они все решаемые. Салон не убитый всегда следил и убирал там. Торг приветствуется возле капота автомобиля. Больше информации по телефону.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-lanos-IDKWCfz.html#924372e4d1;promoted', '2021-03-10 11:17:00'),
+(5, 'https://ireland.apollo.olxcdn.com:443/v1/files/e3gj94q8c0bs1-UA/image;s=644x461', 'Продам Daewoo Sens СРОЧНО', '74 947 грн.', '2007', 'Газ / бензин', '25 000 км', 'Продам свою машину,владею год,по машине много чего сделал.2 ключа. Кап ремонт двигателя 25т.км. назад, новая зимняя резина и диски R14,музыка,центральный замок,газ 2го поколения,по мотору, ходовке, коробке,проводке вопросов нет,днище целое,пороги живые,по внешке видно на фото,КПП с опеля 5 ступка,салон живой,на сидениях чехлы,любой вид переоформления, торг у капота.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-sens-srochno-IDKSZJW.html#924372e4d1;promoted', '2021-03-11 17:12:00'),
+(6, 'https://ireland.apollo.olxcdn.com:443/v1/files/krqrz9ykovb23-UA/image;s=644x461', 'Продам Daewoo Lanos', '116 584 грн.', '2007', 'Газ / бензин', '125 000 км', 'Продаю Daewoo Lanos 2007р. У відмінному стані. Я 2 власник. Гаражне зберігання. Всі скла рідні, включно лобове, чистий поляк, комплектація SE, склопідйомники, кондиціонер, гідропідсилювач, нова піч, гума нова зимова гума, газ brc 4 покоління, фари бі  ксенон, технічно в ідеальному стані. запаска і домкрат в наявності. Не бита, не фарбована. Двигун в відмінному стані, працює без будь-яких нарікань, масло не їсть, сам пробіг говорить про себе. Коробка, і підвіска без питань в ідеальному стані. Свічки, проводи, глушник і акумулятор новий. Нічого в авто не стукає і не грюкает. Автомобіль ідеально підходить для сім\'ї, так і для роботи. Салон доглянутий, без затертостей. В машині нічого не потрібно робити. Сів і поїхав. Переоформлення через МРЕО. Готовий до будь-якої перевірки, будь-якому СТО. Продаж не терміновий. Перекупам прохання не дзвонить. Телефон 506 - Показать номер - Ольга.', 'https://www.olx.ua/obyavlenie/prodam-daewoo-lanos-IDKTEyo.html#924372e4d1;promoted', '2021-03-12 14:11:00'),
+(7, 'https://ireland.apollo.olxcdn.com:443/v1/files/aoj9513bab681-UA/image;s=644x461', 'Daewoo lanos poland SE gas4 2008', '105 481 грн.', '2008', 'Газ / бензин', '182 000 км', 'Польский, отличный ланос в хорошей комплектации SE и газом 4-го поколения. Кондиционер (работает), гидроусилитель, стеклоподьемники, тонировка, центральный замок, сигнализация, мультилок на кпп. Два комплекта хорошей резины ( зима, лето) с дисками на 14. Машина не требует вложений . Кузов, ходовая, двигатель на отлично. Полная переригистрация обязательно. Торг символический и адекватный возле авто. В Харькове не бываю. Глупые предложения не пресылать. Если есть вопросы, звоните.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-poland-se-gas4-2008-IDKX4FI.html#924372e4d1', '2021-03-12 13:57:00'),
+(8, 'https://ireland.apollo.olxcdn.com:443/v1/files/8m6u5bx5ry152-UA/image;s=644x461', 'Продам автомобиль', '86 050 грн.', '2007', 'Газ / бензин', '270 000 км', 'Аккумулятор Турция 8 месяцев, резина зима, 2 лето новые, масло коробка моменяно 500 км, масло фильтр двигатель,2000', 'https://www.olx.ua/obyavlenie/prodam-avtomobil-IDKX4zI.html#924372e4d1', '2021-03-12 13:55:00'),
+(9, 'https://ireland.apollo.olxcdn.com:443/v1/files/qx28wwmrwgaf1-UA/image;s=644x461', 'Дэу Нексия Daewoo', '72 171 грн.', '2007', 'Газ / бензин', '200 км', 'Освобожу место в гараже. Продаю свой автомобиль по причине покупки другого. Двигатель выносливый 8-ми клапанный, работает идеально. Машина вообще достаточно надёжная. Зимой заводится легко. Коробка механическая 5 ступеней. Днище не гнилое, т. к. хранилась всегда в хороших условиях. Никаких сварочных работ проводить не нужно. Новый аккумулятор. Титановые диски. Салон чистый. Задние стёкла затонированы. Минусы - надо заменить спидометр и чехлы на передних сидениях, а также кольца, т.к. при кап. ремонте двигателя (4 тыс. км назад) были поставлены дешовые кольца специально для обкатки. Пара зимних шин и запаска в подарок. Сигнализация Пантера - 2 брелка и 2 ключа. Газ вписан, с документами полный порядок. Переоформление любое. Лучше снятие с учёта. Перекупам лучше не беспокоить', 'https://www.olx.ua/obyavlenie/deu-neksiya-daewoo-IDIjmvQ.html#924372e4d1', '2021-03-12 13:51:00'),
+(10, 'https://ireland.apollo.olxcdn.com:443/v1/files/n9j2yybb2u7a-UA/image;s=644x461', 'Daewoo sens', '41 637 грн.', '2005', 'Газ / бензин', '111 000 км', 'Продам машину в связи с тем что купил другую По телефону все вопросы !!! 681 - Показать номер - Подробнее расскажу почему такая цена !', 'https://www.olx.ua/obyavlenie/daewoo-sens-IDKVW2V.html#924372e4d1', '2021-03-12 13:47:00'),
+(11, 'https://ireland.apollo.olxcdn.com:443/v1/files/tbjtrorcnjt53-UA/image;s=644x461', 'Део. Ланос. 2011г. 1.5л', '116 584 грн.', '2011', 'Бензин', '79 557 км', 'Продам Део Ланос 2011г. 1.5. Второй хазяин. Гаражное хранение. В техпаспорте газ вписан но так и не. установлен на авто. Машина полностью живая в очень харошем техническом и естетическом состоянии садись и едь. Новый акамулятор. Менялось сцепление с корзиной, комплект грм с помпой на 62тыс.км. Масло менялось каждые 7000 заливали Motul. Масло не ест.', 'https://www.olx.ua/obyavlenie/deo-lanos-2011g-1-5l-IDJ23Zi.html#924372e4d1', '2021-03-12 13:40:00'),
+(12, 'https://ireland.apollo.olxcdn.com:443/v1/files/azc2zugiu4h72-UA/image;s=644x461', 'Део Нубира / Daewoo Nubira/ ОБМЕН!', '55 489 грн.', '2003', 'Газ / бензин', '238 000 км', 'Продам Нубиру в хорошем состоянии, машина обслужена, стоит газ 4-го поколения, кузов сохранился в достойном состоянии, машина своя не перепродаётся с документами порядок, страховка до конца месяца. Машина очень надёжная и неприхотливая отличный вариант для роботы ! Возможен обмен на авто с газом с моей доплатой !', 'https://www.olx.ua/obyavlenie/deo-nubira-daewoo-nubira-obmen-IDKhTEz.html#924372e4d1', '2021-03-12 13:40:00'),
+(13, 'https://ireland.apollo.olxcdn.com:443/v1/files/5ld6lve9qg632-UA/image;s=644x461', 'Продам Сенс 1.3', '61 068 грн.', '2006', 'Газ / бензин', '110 000 км', 'Авто в хорошем состоянии. Каждый день в ходу. Стоит газ, но не вписан. Есть дефекты по кузову', 'https://www.olx.ua/obyavlenie/prodam-sens-1-3-IDKX28i.html#924372e4d1', '2021-03-12 13:39:00'),
+(14, 'https://ireland.apollo.olxcdn.com:443/v1/files/rozdsx8mszzr1-UA/image;s=644x461', 'Продам део ланос 2007рік', '58 292 грн.', '2007', 'Газ / бензин', '110 000 км', 'Авто на полном ходу доручення від хазяїна. Звонить по номеру. 982 - Показать номер -', 'https://www.olx.ua/obyavlenie/prodam-deo-lanos-2007rk-IDKX3HE.html#924372e4d1', '2021-03-12 13:37:00'),
+(15, 'https://ireland.apollo.olxcdn.com:443/v1/files/whztj9zetiyj2-UA/image;s=644x461', 'Daewoo Nexia 1.5 8V ГБО 4', '76 335 грн.', '2006', 'Газ / бензин', '330 000 км', 'Продам Daewoo Nexia, с простым и надёжным мотором 1.5, 8 кл. Машина работает хорошо как на газу так и на бензине. Машина не прихотлива к топливу, с минимальным расходом и дешёвая в обслуживании. Не дымит масло не ест, по ходовой всё в порядке, установлено ГБО , резина зимняя на отдельных дисках, документы в порядке. Базовая комплектация, более детально по телефону.', 'https://www.olx.ua/obyavlenie/daewoo-nexia-1-5-8v-gbo-4-IDKCBse.html#924372e4d1', '2021-03-12 13:26:00'),
+(16, 'https://ireland.apollo.olxcdn.com:443/v1/files/x5be1p05x6w71-UA/image;s=644x461', 'Поляк Ланос 1.5 2008 г.', '113 809 грн.', '2008', 'Газ / бензин', '150 000 км', 'Поляк Ланос 1.5 2008 г. Гаражное хранение . Гидроусильтель . Сигнализация 2 ключа 2 брелка . Резина лето + зимния 14 . Без рыжеков. В такси Не была ! Пробег родной ! Машина супер ! Детали по телефону \"на СМС в чате OLX не отвечаю \"', 'https://www.olx.ua/obyavlenie/polyak-lanos-1-5-2008-g-IDKLDyS.html#924372e4d1;promoted', '2021-03-12 13:22:00'),
+(17, 'https://ireland.apollo.olxcdn.com:443/v1/files/vt6rmelpn774-UA/image;s=644x461', 'Daewoo Lanos Poland 1.5 GAZ', '83 247 грн.', '2005', 'Газ / бензин', '186 км', 'Продам Daewoo Lanos Poland 1.5 GAZ Новая зимняя резина, кондиционер, стеклоподъёмники, гидроусилитель.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-poland-1-5-gaz-IDKzzcE.html#924372e4d1;promoted', '2021-03-12 13:20:00'),
+(18, 'https://ireland.apollo.olxcdn.com:443/v1/files/5song4tutjo42-UA/image;s=644x461', 'Daewoo Nubira 2 / Дэо Нубира 2', '97 154 грн.', '2003', 'Газ / бензин', '300 000 км', 'Для своих лет в отличном состоянии! Газ 4 вписан, есть кондиционер (нужно заправить), ГУР не гудит, масло не ест. Из недостатков- нужно уделить внимание порогам, но не критично. На это хорошо уступлю. Желательно переоформление, но могу и дать доверку. Торгуюсь до победного у капота! Всем хороших продаж и выгодных покупок)', 'https://www.olx.ua/obyavlenie/daewoo-nubira-2-deo-nubira-2-IDKTrPV.html#924372e4d1;promoted', '2021-03-12 13:15:00'),
+(19, 'https://ireland.apollo.olxcdn.com:443/v1/files/31oiubt2462r2-UA/image;s=644x461', 'Daewoo Lanos 1.5 газ/бенз', '77 723 грн.', '2003', 'Газ / бензин', '300 000 км', 'Daewoo Lanos каждый день на ходу. Все работает. Нет гура и кондиционера Любой вид оформления.', 'https://www.olx.ua/obyavlenie/daewoo-lanos-1-5-gaz-benz-IDKVVPs.html#924372e4d1', '2021-03-12 13:14:00'),
+(20, 'https://ireland.apollo.olxcdn.com:443/v1/files/tqub5vwhmbpi2-UA/image;s=644x461', 'Daewoo Sens 1.3 ТОРГ', '69 396 грн.', '2005', 'Газ / бензин', '164 852 км', 'Продам пушку ракету - бомбу конфету! Перед вами произведение украинских инженеров , Daewoo Sens 1.3! Сборка патриотическая. Автомобилем владею >1 года. За время эксплуатации лично были проведены следующие работы: 1. На 146 753 км был произведён капитальный ремонт двигателя; 2. Полностью передрана коробка и заменены все по шестеренки и тд; 3. Заменено два пыльника ; 4. Заменены тормозные колодки и бараны по кругу; 5. Заменены задние амортизаторы ; 6. Развал схождения сделан 150 км назад; 7. Замени масла каждые 8тысяч (отдам целую бутылку в подарок) 8. Обслужено ГБО полностью; 9. Замены все патрубок которые вообще могут течь; На борту автомобиля установлено ГБО 2го поколения. Расход порядка 9-10литров в городе , трасса около 7; Автомобиль для личного использования возит меня каждый день. Особого внимания не требует , четко проведённые ТО все минусы удаляют. Из минусов , после небольшого дтп по моей вине была заменена дверь. Стоимость покраски двери и крыла порядка 150$ , поэтому просьба не нужно писать в комментария несусветную скидку. В течении всего времени владения в автомобиль было вложено достаточное количество финансов. При конструктивном диалоге я со своей стороны гарантирую уступить цену. Причина продажи покупка заокеанского друга. Детали по телефону , все расскажу и покажу.', 'https://www.olx.ua/obyavlenie/daewoo-sens-1-3-torg-IDJhawa.html#924372e4d1', '2021-03-12 13:00:00'),
+(21, 'https://ireland.apollo.olxcdn.com:443/v1/files/8ygd53ck4puu3-UA/image;s=644x461', 'Продам срочно Део сенс', '47 189 грн.', '2003', 'Газ / бензин', '200 км', 'Продам део сенс тёмно зелёного газ 2-го поколения в тех.паспорт вписан. КПП работает чётко Новый диск сцепления корзина выжимной. Новая кулиса. Резина зимняя 50 %. Чехлы на сидениях эко кожа чёрные. Кузов не ржавый. Продажа по тех.паспорту Тел. 962 - Показать номер -', 'https://www.olx.ua/obyavlenie/prodam-srochno-deo-sens-IDKBVPy.html#924372e4d1', '2021-03-12 12:59:00'),
+(22, 'https://ireland.apollo.olxcdn.com:443/v1/files/w4biebjb2shj-UA/image;s=644x461', 'Продам автомобиль', '91 602 грн.', '2008', 'Газ / бензин', '160 000 км', 'Продам свій автомобіль робити нічого ненада сів та поіхав, багато чого замінено, зімня резина возможний торг біля капоту при огляді авто, тільки з переоформлением всі питання за телефоном 959 - Показать номер - на повідомлення відповідаю дуже рідко.', 'https://www.olx.ua/obyavlenie/prodam-avtomobil-IDKX1Ag.html#924372e4d1', '2021-03-12 12:55:00'),
+(23, 'https://ireland.apollo.olxcdn.com:443/v1/files/5xlb3luqswo82-UA/image;s=644x461', 'ДЕО Ланос,Поляк 1,5 2007г.', '94 378 грн.', '2007', 'Газ / бензин', '177 000 км', 'Продам свой ДЕО Ланос,техническое состояние хорошее,визуально также, машина не требует на данный момент никаких финансовых вложений, два месяца назад установлен газ 4го поколения,работает отлично,салон чистый,аккуратный,новый аккумулятор, много чего поменяно,все запчасти дорогие,делал для себя,продажа в связи с отъездом. Единственный не большой минус,рыжики по порогам,но не критично. Разумный торг уместен.', 'https://www.olx.ua/obyavlenie/deo-lanos-polyak-1-5-2007g-IDKX1Bo.html#924372e4d1', '2021-03-12 12:54:00'),
+(24, 'https://ireland.apollo.olxcdn.com:443/v1/files/yba8z12uaedg-UA/image;s=644x461', 'Продам Daewoo sens', '83 275 грн.', '2006', 'Газ / бензин', '250 000 км', 'Продам Daewoo sens в хорошем состояний.Один владелец.Все стекла родные.Стоит газ 2 поколения.Вписаный в тех паспорт.Мотор масло не берет.Коробка не хрустит и не выбивает.По ходовке все отлично.Музыка. Салон в отличном состоянии.С документами полный порядо.Любой вид переоформления.Торг у авто', 'https://www.olx.ua/obyavlenie/prodam-daewoo-sens-IDKX14j.html#924372e4d1;promoted', '2021-03-12 12:52:00'),
+(25, 'https://ireland.apollo.olxcdn.com:443/v1/files/7x03obe6r09u2-UA/image;s=644x461', 'Продам или обменяю', '91 602 грн.', '2006', 'Газ / бензин', '250 000 км', 'Машина на полном ходу, заменины задние стойки каяба и пружины, передние суппорта, стартер, генератор, новый аккумулятор, сделана рулевая рейка, поменяны наконечники, вообщем в машине многое чего сделано. Машина на мне, Или обменяю с моей доплатой.', 'https://www.olx.ua/obyavlenie/prodam-ili-obmenyayu-IDKMwL7.html#924372e4d1;promoted', '2021-03-12 12:52:00');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `comments`
+--
+
+CREATE TABLE `comments` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `announcement_id` bigint(20) UNSIGNED NOT NULL,
+  `parent_comment_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `comments` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `data_comment` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `comments`
+--
+
+INSERT INTO `comments` (`id`, `announcement_id`, `parent_comment_id`, `user_id`, `comments`, `data_comment`) VALUES
+(199, 1, NULL, 2, 'com1', '2021-03-17 12:28:13'),
+(200, 1, NULL, 2, 'com2', '2021-03-17 12:28:18'),
+(201, 1, NULL, 1, 'com3', '2021-03-17 12:28:43'),
+(202, 1, NULL, 1, 'com4', '2021-03-17 12:28:48'),
+(203, 1, 199, 1, '@Robert:  rep1', '2021-03-17 12:29:20'),
+(204, 1, 201, 1, '@maria:  rep3', '2021-03-17 12:29:38'),
+(205, 1, 202, 1, '@maria:  hello', '2021-03-17 12:31:23'),
+(206, 1, 199, 1, '@Robert:  w', '2021-03-17 12:32:52'),
+(207, 1, 201, 1, '@maria:  q', '2021-03-17 12:34:41'),
+(208, 1, 199, 1, '@maria:  xxx', '2021-03-17 12:38:08'),
+(209, 1, 199, 1, '@maria:   cc', '2021-03-17 12:39:12'),
+(210, 1, 199, 1, '@maria:  ff', '2021-03-17 12:41:25'),
+(211, 1, 201, 1, '@maria:  pop', '2021-03-17 12:42:39');
 
 -- --------------------------------------------------------
 
@@ -95,12 +140,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2021_03_01_082928_add_country_city_mobile_columns_to_users_table', 2),
-(5, '2021_03_02_100532_add_profile_img_mobile_columns_to_users_table', 3),
-(6, '2021_03_04_091520_add_passing_tokens_mobile_columns_to_users_table', 4),
-(7, '2021_03_04_093004_add_passing_token_mobile_columns_to_users_table', 5),
-(9, '2021_03_04_095006_add_passing_tokens_mobile_columns_to_users_table', 6),
-(10, '2021_03_09_082957_create_announcements_table', 7);
+(4, '2021_03_01_082928_add_country_city_mobile_columns_to_users_table', 1),
+(5, '2021_03_02_100532_add_profile_img_mobile_columns_to_users_table', 1),
+(6, '2021_03_04_095006_add_passing_tokens_mobile_columns_to_users_table', 1),
+(7, '2021_03_09_082957_create_announcements_table', 1),
+(11, '2021_03_11_121959_create_comments_table', 2);
 
 -- --------------------------------------------------------
 
@@ -132,7 +176,7 @@ CREATE TABLE `users` (
   `country` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `city` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `picture` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `api_token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `api_token` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -140,23 +184,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `country`, `city`, `picture`, `api_token`) VALUES
-(1, 'w', 'workproject3006@gmail.com', NULL, '$2y$10$co9i0XxwBVufSVz4Nb/MquGfVjBa.bFlgAfvhzxGkHn3KXfMQRFnm', 'QThOlDYdoM1T5E2CgxydFFfFrESrFwDqwLFtglT9zFOJ5iVZdKsXfEXyudp7', '2021-02-24 10:36:30', '2021-03-05 08:33:11', 'Azerbaijan', 'Sumqayit', '', 'QLI8siirSLiCbYegV2XI6sabZTuWftsQazR9hIPHTkeAA9qjBYw1ZFgR6L71'),
-(2, 'r', 'r@mail.com', NULL, '$2y$10$Ii3SzhG1xvYW6K.drIBbG.PqCOYPXBeTFjnDM.B/THKcP2KwWirZe', NULL, '2021-02-26 07:54:18', '2021-03-04 08:12:18', '', '', '', '0ET13k6OHJ8zYtcJiUHDjUyd9SNfGtRHMo7oTo1TND0cPUvSgMcUPQXb3C4X'),
-(3, 'Drakу', 'd@mail.com', NULL, '$2y$10$01DmKgKGCMpU3VQzRpVIAeILAcZKypX/MIGOuQfNSy8y7YlDPfAWe', NULL, '2021-02-26 08:06:22', '2021-03-04 08:12:18', 'Austria', 'Absam', '322.jpg', 'WlPGOsHqAmyybbT8bDuVYSz7QiN2amJyAxIRv2GS6AdwqkDG0BoFFAcLATAc'),
-(4, 'ggg', 'g@mail.com', NULL, '$2y$10$Y84rCQuOuIefjfNTsmkAw.WhJlGIwWToWg8gpwxDPE0V3bpHdL6EO', NULL, '2021-02-26 08:40:41', '2021-03-04 08:12:18', '', '', '', 'CgR8Pakui0H51hi7dswGHArKeRtuSsDkjGECs5vDwzo1OHNLnM4mbpo8WkJS'),
-(5, 'ss', 's@gmail.com', NULL, '$2y$10$3F7LMegYCjqKuDUsBZKY8erprPeEnS6bpsZSYZwYd2QSdejMW45Gq', NULL, '2021-02-28 11:10:20', '2021-03-04 08:12:18', '', '', '', 'V2C7GL14YIjsfefhQjr90EHshRQp8xboV8ziOzA2iVAA7DEaCKBaUr96Mt1r'),
-(6, 'r', 'rr@mail.com', NULL, '$2y$10$Qg38nFJoUkaoINeE/OuGwenx9o8fP/Mdj34jPa5bMtPKP5JURbB7W', NULL, '2021-03-01 10:40:40', '2021-03-04 08:12:18', 'Counrty', 'City', '', 'GLlEStkm8aC5IlzmEiysv0fXTX4Chb3ihCGztjzCW41hKgW7736yvgtxshyl'),
-(7, 'x', 'x@mail.com', NULL, '$2y$10$8AZEVh19g5aVCMqdomZ/qu5DarCYDzxV4EUvlrhU5x2NtPFYYBVzi', NULL, '2021-03-01 10:43:30', '2021-03-04 08:12:18', 'Counrty', 'City', '', '7vCf4CZAZbO0VVaCFpoft1V6rNdfflcczh8IYjTcmL7y9ulCyUGCV9aRueFX'),
-(8, 'w', 'rw@mail.com', NULL, '$2y$10$LlaSU/10HtO8Ls047sKtleu1AiWxjpvkU9IwIm.cVLfMD2O3/v/D.', NULL, '2021-03-01 11:02:58', '2021-03-04 08:12:18', 'Bahrain', 'Oil City', '', 'usxCzWzTnCeVASdDN3LVBaOc96qjyLAUXxVZuBVTy9Rek7IwenpWS2MSuMgi'),
-(9, 'rr', 'rrrrrrr@mail.com', NULL, '$2y$10$4uaFabNfz41hgWF0gLzEa.CEJNDW.6zwbPc.iil8McId0HgKARRBS', NULL, '2021-03-01 11:07:18', '2021-03-04 08:12:18', 'Azerbaijan', 'Quba', '', '2UEB8wqwcPN2hDzTAeEtE0modyJqxtwX6JazWIoSwp8TScpLfasH2IMZEWqT'),
-(10, 'Danu', 'ddd@mail.com', NULL, '$2y$10$u/XGkdNmwR8lRllrA3SSoexnJDu/SdSrUmfqSCmskO54dVzZa/j4q', NULL, '2021-03-01 11:29:06', '2021-03-04 08:12:18', 'Bangladesh', 'Tejgaon', '', 'gpTZaCXHKuQpBee48s7znKAE1vZJU3azgn0NUGgYVJ0DEr0xXDLzPOm4qyeH'),
-(11, 'Amanda', 'a@mail.com', NULL, '$2y$10$PLuNg50EvIK08rae9gdG6.1eNIjzqrI/BDjZoEHmJzM.9pj0SB4tO', NULL, '2021-03-02 08:41:15', '2021-03-04 08:12:18', 'Austria', 'Aifersdorf', 'Standart.png', 'XtEuvJa8Ugf5YbFnDl6HZZ0zrBOSBrYoEK17zWoWYj0nSNuroQMDPrric9N2'),
-(12, 'g', 'gg@mail.com', NULL, '$2y$10$Ui7uPYmOkzzW6T01QYJWNemN2TPTUQ0dJKOLZ/qzeEHQxnBc0X5sy', NULL, '2021-03-02 09:08:51', '2021-03-04 08:12:18', 'Australia', 'City', 'Standart.png', '07z5DUOQIRTivDv98pdOy5fm0wj9TJf2GGzPH5vA4FWXLiALMZxMwed8rMio'),
-(13, 'ee', 'reer@mail.com', NULL, '$2y$10$2brFfcCNvIlmaLmZ95QVrOvpC0bz.OWa23WaK6KYlOPXEqazdTdXu', NULL, '2021-03-02 09:12:51', '2021-03-04 08:12:18', 'Azerbaijan', 'City', 'Standart.png', '1EfOi3PlRn0fKnk6gTQYTz1jBnwJTZmsDAQwNE0Pe2i3UAh7p3sFjrio9CVL'),
-(14, 'x', 'qlx@gmail.com', NULL, '$2y$10$kLrxqhtDhY9mg3Rki6XY5.rlBERTvjpkVRZuVHvQsOd6Bi4W37MGm', NULL, '2021-03-02 09:14:12', '2021-03-04 08:12:18', 'Country', 'City', 'Standart.png', '1KSwG0INPNaqGuIuabY05i95Ue6rtz8pJ0zTJYKMpohA6QjZm29ILBWO365w'),
-(15, 'maria', 'masha.lytenko@gmail.com', NULL, '$2y$10$26a08UkAhoV41IKQjX8TeunFw2KU.bw4ovO6leEb3Kyce4XJkBKhC', 'RxkX3PdoJX2NL8iWRDShfTg2XvKCGKgp2rHqLR8DJcS6ZKvo4wD4xf7dEZwW', '2021-03-03 08:00:04', '2021-03-05 08:36:05', 'Aruba', 'Sero Blanco', '1522.jpg', 'VxURkx3Abe5DnmrbzGTGnjJw1PMbEHVxfaPN2x8oyxXXvAmsBTUf6W4iI9D5'),
-(16, 'w', 'rdsada@mail.com', NULL, '$2y$10$I4.isYtzsL20hQwUVUEdoOBD4Ug2laQ6t/M6sU..lpUKBeI8iqlPK', NULL, '2021-03-04 09:36:49', '2021-03-04 09:36:49', 'Aruba', 'San Barbola', 'Standart.png', 'DLDvemDpiwrJIfYcKBA2QUAwI0AjMS011VJi62ahXkWhIcsEpUWSaBtkYhaP'),
-(17, 'n', 'n@gmail.com', NULL, '$2y$10$gGTYc4XimIt5sqH2t3SOpOWpDHmsT6R2QgEUIwgwCsSJ0JvKzYudW', NULL, '2021-03-05 10:53:09', '2021-03-05 10:53:09', 'Argentina', 'Aldo Bonzi', '17cloud.jpg', 'ddFMg9TVM0LU7PHiVgYw4JjvcLWXGdR3ki1VqjicHTu45o326zshBvT1noMh');
+(1, 'maria', 'masha.lytenko@gmail.com', NULL, '$2y$10$oGzyH/jKUNRctuNrRGnBZe7tyqD3seKqQ8GZebTjQkYOIOTMacpMC', NULL, '2021-03-12 10:18:27', '2021-03-12 10:18:27', 'Austria', 'Aichbach', '122.jpg', 'IaekuANooAxntWPK07AfePR3OFSGDeRI0m3AG9pCZSQFrD2UxyyK4vnBhlNm'),
+(2, 'Robert', 'r@mail.com', NULL, '$2y$10$6OOT6QLGrBfkfOcCL64WaOtPAhQSsPCmwjjvKeyc72xsySoIjIeO.', NULL, '2021-03-16 07:56:26', '2021-03-16 07:56:26', 'Austria', 'Aigen im Muehlkreis', '2cloud.jpg', 'FkG8Jz0xq7xI8bvkx6CvPdR67HcbAmOEXIchlRrpmdIJdWi31RdUkhLdBZ9K');
 
 --
 -- Индексы сохранённых таблиц
@@ -167,6 +196,15 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 --
 ALTER TABLE `announcements`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `comments_announcement_id_foreign` (`announcement_id`),
+  ADD KEY `comments_parent_comment_id_foreign` (`parent_comment_id`),
+  ADD KEY `comments_user_id_foreign` (`user_id`);
 
 --
 -- Индексы таблицы `failed_jobs`
@@ -201,7 +239,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `announcements`
 --
 ALTER TABLE `announcements`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=480;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT для таблицы `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
 
 --
 -- AUTO_INCREMENT для таблицы `failed_jobs`
@@ -213,13 +257,25 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `comments`
+--
+ALTER TABLE `comments`
+  ADD CONSTRAINT `comments_announcement_id_foreign` FOREIGN KEY (`announcement_id`) REFERENCES `announcements` (`id`),
+  ADD CONSTRAINT `comments_parent_comment_id_foreign` FOREIGN KEY (`parent_comment_id`) REFERENCES `comments` (`id`),
+  ADD CONSTRAINT `comments_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

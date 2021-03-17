@@ -69,6 +69,7 @@ export default {
             axios.get('api/profile/user')
                 .then(function (response) {
                     vm.user = response.data.user;
+                    console.log(response.data.user);
                     vm.getCity();
                 })
                 .catch(function (error) {

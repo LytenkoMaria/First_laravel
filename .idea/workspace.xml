@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d2a8cc0-61d1-44c6-bcd1-fed76cf20e6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/first_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/first_laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Announcement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Comments.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/CreateChildComment.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ParsingDataCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ParsingDataCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/MyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/MyEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Announcements.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Announcements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_09_082957_create_announcements_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_09_082957_create_announcements_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/OLX.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/OLX.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,18 +165,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\resources\views" />
+      <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\app\Models" />
       <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\public\images\usersProfilePicture" />
       <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\public\images" />
       <recent name="W:\domains\first_laravel\app\Models" />
-      <recent name="W:\domains\first_laravel\resources\views\layouts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Open Server Panel\OpenServer\domains\first_laravel\resources\views\auth" />
       <recent name="W:\domains\first_laravel\app\Http\Controllers" />
       <recent name="W:\domains\first_laravel\resources\js\components" />
     </key>
@@ -204,7 +218,16 @@
       <workItem from="1614929103680" duration="20052000" />
       <workItem from="1615123790966" duration="2425000" />
       <workItem from="1615210861043" duration="10015000" />
-      <workItem from="1615277464650" duration="23244000" />
+      <workItem from="1615277464650" duration="24923000" />
+      <workItem from="1615356272407" duration="20824000" />
+      <workItem from="1615450019866" duration="24386000" />
+      <workItem from="1615485416815" duration="1956000" />
+      <workItem from="1615536707433" duration="24006000" />
+      <workItem from="1615737364031" duration="18115000" />
+      <workItem from="1615790861495" duration="20342000" />
+      <workItem from="1615882614550" duration="23866000" />
+      <workItem from="1615918574756" duration="2465000" />
+      <workItem from="1615964867525" duration="15626000" />
     </task>
     <servers />
   </component>
@@ -216,18 +239,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614793781411" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615296729640">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615473885526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615296729640" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1615473885526" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1614793819774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614793819774" />
-    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1614944678993">
+    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1615905898718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1614944678993" />
+    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1615905898718" />
     <state x="454" y="130" width="1096" height="781" maximized="true" key="dock-window-1" timestamp="1614594471464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,10 +259,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1614349891467" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1614849691812">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1615373635108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614849691812" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615373635108" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614857684971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -29,6 +29,9 @@ const Registration = Vue.component('registration', require('./components/Registr
 const Reset = Vue.component('resetPassword', require('./components/ResetPassword.vue').default);
 const NewPassword = Vue.component('newPassword', require('./components/NewPassword.vue').default);
 const Announcements = Vue.component('OLX', require('./components/OLX.vue').default);
+const Announcement = Vue.component('announcement', require('./components/Announcement.vue').default);
+const Comments = Vue.component('comments', require('./components/Comments.vue').default);
+const CreateChildComments = Vue.component('createChildComments', require('./components/CreateChildComment').default);
 
 const routes = [
     { path: '/profile', component:  Prof},
@@ -37,6 +40,9 @@ const routes = [
     { path: '/reset', component:  Reset},
     { path: '/password/reset/:token', component:  NewPassword},
     { path: '/announcements', component:  Announcements},
+    { path: '/announcement/:id', component:  Announcement},
+    { path: '/comments', component:  Comments},
+    { path: '/createChildComments', component:  CreateChildComments},
 ]
 
 
