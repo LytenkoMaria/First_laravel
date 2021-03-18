@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-        <h2>User:</h2><p> {{ $text['fromUser'] }}</p>
-        <div class="row"><h2>Replied to your comment:</h2><p> {{ $text['replyComment'] }}</p></div>
-        <h2>Text:</h2><p> {{ $text['mess'] }}</p>
-        <link href="http://laravel/announcements.php">
-        <p> {{$text['data']}}</p>
+    <h3>User:</h3><p>{{ $text['fromUser'] }}</p>
+    <div class="row"><h3>Replied to your comment:</h3><p>{{ $text['replyComment'] }}</p></div>
+    <h3>Text:</h3><p>{{ $text['mess'] }}</p>
+    <link href="http://laravel/announcements.php">
+    <p>{{$text['data']}}</p>
 </body>
 </html>
 

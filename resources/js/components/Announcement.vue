@@ -45,7 +45,6 @@
              axios.post('/api/announcement/show', { id: vm.id })
                  .then(function (response) {
                      vm.announcement = response.data.announcement.original.announcement;
-                    // console.log(vm.announcement.id);
                  })
                  .catch(function (error) {
                      console.log(error.response.data.errors);

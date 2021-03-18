@@ -2002,7 +2002,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/api/announcement/show', {
         id: vm.id
       }).then(function (response) {
-        vm.announcement = response.data.announcement.original.announcement; // console.log(vm.announcement.id);
+        vm.announcement = response.data.announcement.original.announcement;
       })["catch"](function (error) {
         console.log(error.response.data.errors);
       });
@@ -2535,6 +2535,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "profile",
   data: function data() {
@@ -2553,7 +2557,6 @@ __webpack_require__.r(__webpack_exports__);
       var vm = this;
       axios.get('api/profile/user').then(function (response) {
         vm.user = response.data.user;
-        console.log(response.data.user);
         vm.getCity();
       })["catch"](function (error) {
         console.log(error.response.data.errors);
@@ -39466,6 +39469,32 @@ var render = function() {
                     {
                       name: "model",
                       rawName: "v-model",
+                      value: _vm.user.slack_webhook,
+                      expression: "user.slack_webhook"
+                    }
+                  ],
+                  staticClass: " form-control mt-4",
+                  attrs: { name: "slack", readonly: "" },
+                  domProps: { value: _vm.user.slack_webhook },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.user, "slack_webhook", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-10" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
                       value: _vm.user.country,
                       expression: "user.country"
                     }
@@ -39484,7 +39513,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _vm._m(4),
+              _vm._m(5),
               _vm._v(" "),
               _c("div", { staticClass: "col-10" }, [
                 _c("input", {
@@ -39556,7 +39585,7 @@ var render = function() {
               },
               [
                 _c("div", { staticClass: "row" }, [
-                  _vm._m(5),
+                  _vm._m(6),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-10" }, [
                     _c("input", {
@@ -39582,7 +39611,7 @@ var render = function() {
                     })
                   ]),
                   _vm._v(" "),
-                  _vm._m(6),
+                  _vm._m(7),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-10" }, [
                     _c("input", {
@@ -39603,6 +39632,36 @@ var render = function() {
                             return
                           }
                           _vm.$set(_vm.user, "email", $event.target.value)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(8),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-10" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.user.slack_webhook,
+                          expression: "user.slack_webhook"
+                        }
+                      ],
+                      staticClass: " form-control mt-4",
+                      attrs: { required: "", name: "slack" },
+                      domProps: { value: _vm.user.slack_webhook },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.user,
+                            "slack_webhook",
+                            $event.target.value
+                          )
                         }
                       }
                     })
@@ -39715,7 +39774,7 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(7)
+                _vm._m(9)
               ]
             )
           ])
@@ -39753,6 +39812,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-2" }, [
+      _c("label", { staticClass: "profile" }, [_vm._v("Slack")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-2" }, [
       _c("label", { staticClass: "profile" }, [_vm._v("Country")])
     ])
   },
@@ -39778,6 +39845,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-2" }, [
       _c("label", { staticClass: "profile" }, [_vm._v("Email")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-2" }, [
+      _c("label", { staticClass: "profile" }, [_vm._v("Slack")])
     ])
   },
   function() {

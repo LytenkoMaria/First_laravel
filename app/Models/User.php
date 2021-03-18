@@ -6,8 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
+use function Symfony\Component\Translation\t;
 
-    class User extends Authenticatable
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\DB;
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','country','city','picture','api_token'
+        'name', 'email', 'password','country','city','picture','api_token','slack_webhook'
     ];
 
     /**
@@ -43,7 +44,7 @@ use Illuminate\Support\Facades\DB;
 
         $returnUpdateData = DB::table('users')
             ->where('id', $userData["id"])
-            ->update(['name' => $userData["name"], 'email'=> $userData["email"], 'country' => $userData["country"], 'city' => $userData["city"]]);
+            ->update(['name' => $userData["name"], 'email'=> $userData["email"], 'slack_webhook'=> $userData["slack_webhook"], 'country' => $userData["country"], 'city' => $userData["city"]]);
 
         return response()->json(["status"=> "success"]);
     }
@@ -56,6 +57,11 @@ use Illuminate\Support\Facades\DB;
                 ->update(['picture' => $userData["picture"]]);
 
             return response()->json(["status"=> "success"]);
+        }
+
+        public function routeNotificationForSlack($notification)
+        {
+            return $this->slack_webhook;
         }
 
     }

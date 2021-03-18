@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 
 class Announcements extends Model
 {
+    use Notifiable;
+
     protected $table = 'announcements';
 
     protected $fillable = [

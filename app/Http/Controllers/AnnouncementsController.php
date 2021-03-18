@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Announcements;
 use App\Models\User;
+use App\Notifications\SendNewAnnouncementsToSlack;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnnouncementsController extends Controller
 {

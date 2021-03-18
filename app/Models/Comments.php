@@ -46,7 +46,6 @@ class Comments extends Model
         $child = DB::table('comments')->where('parent_comment_id', $id)
         ->join('users', 'users.id', '=', 'comments.user_id')
             ->select('users.email','users.name', 'users.picture' ,'comments.id' , 'comments' ,'comments.user_id', 'comments.data_comment', 'comments.announcement_id' )
-
             ->get();
 
         return $child;
@@ -75,18 +74,11 @@ class Comments extends Model
             'comments' => $request["comments"],
             'data_comment' => $data,
         ]);
-        ;
-        //dd(is_string ( strval($request["replyUserEmail"] )));
         $str = strpos($request["comments"], " ");
         $text = substr($request["comments"], $str+2);
-        $mes = ['mess'  => $text, 'fromUser' => $request["parentCommentUserName"],
-            'data' => $data,
-         'replyComment' => $request["replyComment"] ,
-        ];
+        $mes = ['mess'  => $text, 'fromUser' => $request["parentCommentUserName"], 'data' => $data, 'replyComment' => $request["replyComment"] ];
         $message= $mes;
-       // dd($message);
         self::$from = $request["replyUserEmail"];
-
             Mail::send('mail', ['text' => $message], function ($message) {
             $message->to( self::$from);
             $message->from('workproject3006@gmail.com','Laravel project');

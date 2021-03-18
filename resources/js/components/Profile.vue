@@ -9,6 +9,8 @@
                     <div class="col-10"><input v-model="user.name" class=" form-control mt-4" name="name" readonly=""></input></div>
                     <div class="col-2"><label class="profile">Email</label></div>
                     <div class="col-10"><input v-model="user.email" class=" form-control mt-4" name="email" readonly=""></input></div>
+                    <div class="col-2"><label class="profile">Slack</label></div>
+                    <div class="col-10"><input v-model="user.slack_webhook" class=" form-control mt-4" name="slack" readonly=""></input></div>
                     <div class="col-2"><label class="profile">Country</label></div>
                     <div class="col-10"><input v-model="user.country" class=" form-control mt-4" name="country" readonly=""></input></div>
                     <div class="col-2"><label class="profile">City</label></div>
@@ -26,6 +28,8 @@
                         <div class="col-10"><input v-model="user.name" required class=" form-control mt-4" name="name"></input> </div>
                         <div class="col-2"><label class="profile">Email</label></div>
                         <div class="col-10"><input v-model="user.email" required class=" form-control mt-4" name="email"></input></div>
+                        <div class="col-2"><label class="profile">Slack</label></div>
+                        <div class="col-10"><input v-model="user.slack_webhook" required class=" form-control mt-4" name="slack"></input></div>
                         <select v-on:change.prevent="getCity()"  v-model="user.country" class="form-control country-city-form-profile">
                             <option selected disabled>Country</option>
                             <option v-for="option in options_country" >
@@ -69,7 +73,6 @@ export default {
             axios.get('api/profile/user')
                 .then(function (response) {
                     vm.user = response.data.user;
-                    console.log(response.data.user);
                     vm.getCity();
                 })
                 .catch(function (error) {

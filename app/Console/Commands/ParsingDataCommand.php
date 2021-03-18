@@ -1,10 +1,16 @@
 <?php
 
 namespace App\Console\Commands;
+use App\Models\User;
+use App\Notifications;
+use Illuminate\Notifications\Notification;
+use App\Notifications\SendNewAnnouncementsToSlack;
 
 use Illuminate\Console\Command;
+use Illuminate\Foundation\Auth;
 use Goutte\Client;
 use App\Models\Announcements;
+
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpClient\HttpClient;
 
@@ -78,8 +84,15 @@ class ParsingDataCommand extends Command
                         $this->mas['description'] = $announcement->filter('#textContent')->text();
                         Announcements::create($this->mas);
                         echo "good";
-                    }
+                        $data = $this->mas;
+                        $users = User::where('slack_webhook' ,'!=' , null)
+                            ->select('slack_webhook')
+                            ->get();
+                        foreach ($users as $user)
+                        {
+                            $user->notify(new SendNewAnnouncementsToSlack($data));
+                        }
+                }
         });
-
     }
 }
