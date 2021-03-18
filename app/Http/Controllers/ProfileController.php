@@ -45,7 +45,7 @@ class ProfileController extends Controller
         $newName = $id.$imgn;
         $img->move(public_path() . '/images/usersProfilePicture/',$newName);
         $userData= ['picture' => $newName, 'id' => $id ];
-        $status = User::updateImg( $userData);
+        User::updateImg( $userData);
 
         return response()->json(["newPicture" => $newName]);
     }

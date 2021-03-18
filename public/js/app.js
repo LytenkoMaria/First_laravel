@@ -1982,7 +1982,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Announcement",
@@ -2018,7 +2017,8 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   beforeMount: function beforeMount() {
-    this.showAnnouncement(), this.getUserData();
+    this.showAnnouncement();
+    this.getUserData();
   }
 });
 
@@ -2033,12 +2033,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2216,7 +2210,6 @@ __webpack_require__.r(__webpack_exports__);
       var vm = this;
       axios.get('/api/comments/show/' + vm.announcementId).then(function (response) {
         vm.comments = response.data.comments;
-        console.log(vm.comments);
       })["catch"](function (error) {
         console.log(error.response.data.errors);
         vm.user_errors = error.response.data.errors;
@@ -2445,7 +2438,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OLX",
   data: function data() {
@@ -2458,7 +2450,6 @@ __webpack_require__.r(__webpack_exports__);
       var vm = this;
       axios.get('/api/announcements/show').then(function (response) {
         vm.announcements = response.data.announcements.original.announcements;
-        console.log(vm.announcements);
       })["catch"](function (error) {
         console.log(error.response.data.errors);
       });
@@ -2486,8 +2477,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -2585,7 +2574,6 @@ __webpack_require__.r(__webpack_exports__);
       var formData = new FormData();
       formData.append('attachment', uploadedFile);
       formData.append('id', vm.user.id);
-      console.log(uploadedFile);
       axios.post('/api/profile/update/img', formData, config).then(function (response) {
         vm.user.picture = response.data.newPicture;
       })["catch"](function (error) {
@@ -2634,10 +2622,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -2738,8 +2722,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -38551,11 +38533,7 @@ var render = function() {
                               "aria-expanded": "false"
                             }
                           },
-                          [
-                            _vm._v(
-                              "\n                            menu\n                        "
-                            )
-                          ]
+                          [_vm._v("Menu")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -39398,7 +39376,7 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       !_vm.isHidden
-        ? _c("div", { staticClass: "prof " }, [
+        ? _c("div", { staticClass: "prof" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-12" }, [
                 _c("img", {
@@ -39713,9 +39691,9 @@ var render = function() {
                       _vm._l(_vm.options_country, function(option) {
                         return _c("option", [
                           _vm._v(
-                            "\n                            " +
+                            "\n                        " +
                               _vm._s(option.name) +
-                              "\n                        "
+                              "\n                    "
                           )
                         ])
                       })
@@ -39763,9 +39741,9 @@ var render = function() {
                       _vm._l(_vm.options_city, function(option) {
                         return _c("option", [
                           _vm._v(
-                            "\n                            " +
+                            "\n                        " +
                               _vm._s(option) +
-                              "\n                        "
+                              "\n                    "
                           )
                         ])
                       })
@@ -40081,9 +40059,9 @@ var render = function() {
             _vm._l(_vm.options_country, function(option) {
               return _c("option", [
                 _vm._v(
-                  "\n                                      " +
+                  "\n                     " +
                     _vm._s(option.name) +
-                    "\n                                  "
+                    "\n                  "
                 )
               ])
             })
@@ -40132,9 +40110,9 @@ var render = function() {
             _vm._l(_vm.options_city, function(option) {
               return _c("option", [
                 _vm._v(
-                  "\n                                                " +
+                  "\n                         " +
                     _vm._s(option) +
-                    "\n                                           "
+                    "\n                     "
                 )
               ])
             })

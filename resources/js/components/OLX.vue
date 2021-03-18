@@ -21,7 +21,6 @@
         </div>
     </div>
 
-
 </template>
 
 <script>
@@ -38,7 +37,6 @@ name: "OLX",
             axios.get('/api/announcements/show')
                 .then(function (response) {
                     vm.announcements = response.data.announcements.original.announcements;
-                    console.log(vm.announcements);
                 })
                 .catch(function (error) {
                     console.log(error.response.data.errors);
@@ -53,10 +51,9 @@ name: "OLX",
                     console.log(error);
                 })
         },
-
     },
     beforeMount(){
-        this.showAnnouncements()
+        this.showAnnouncements();
     }
 }
 </script>

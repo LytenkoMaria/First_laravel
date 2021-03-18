@@ -21,14 +21,14 @@ class CommentsController extends Controller
     protected function createComments(Request $request)
     {
         $comments = Comments::createComments($request);
+
         return response()->json(["comments"=> $comments]);
     }
 
     protected function newChildComments(Request $request)
     {
-        $childComments = Comments::newChildComments($request);
-        return response()->json(["success"=> true], 200);
+        Comments::newChildComments($request);
 
-        return response()->json(["childComments"=> $childComments], 200);
+        return response()->json(["success"=> true], 200);
     }
 }

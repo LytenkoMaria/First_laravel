@@ -29,7 +29,7 @@ class Comments extends Model
     public static function getComments(int $id)
     {
         $comments =[];
-        $parent_comments = DB::table('comments')->where('parent_comment_id' , null )
+        $parent_comments = self::where('parent_comment_id' , null )
             ->where('announcement_id' , $id )
             ->join('users', 'users.id', '=', 'comments.user_id')
             ->select('users.email', 'users.name', 'users.picture' ,'comments.id' , 'comments' ,'comments.user_id', 'comments.data_comment', 'comments.announcement_id' )
@@ -43,7 +43,7 @@ class Comments extends Model
     }
 
     private static function childComments( $id ) {
-        $child = DB::table('comments')->where('parent_comment_id', $id)
+        $child = self::where('parent_comment_id', $id)
         ->join('users', 'users.id', '=', 'comments.user_id')
             ->select('users.email','users.name', 'users.picture' ,'comments.id' , 'comments' ,'comments.user_id', 'comments.data_comment', 'comments.announcement_id' )
             ->get();

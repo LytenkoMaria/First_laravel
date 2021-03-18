@@ -21,7 +21,6 @@
               :userPicture = user.picture
               :userId = user.id >
           </comments>
-
       </div>
  </template>
 
@@ -63,8 +62,8 @@
          },
      },
      beforeMount(){
-         this.showAnnouncement(),
-             this.getUserData()
+         this.showAnnouncement();
+         this.getUserData();
      }
  }
  </script>

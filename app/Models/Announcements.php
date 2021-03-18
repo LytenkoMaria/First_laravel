@@ -32,14 +32,14 @@ class Announcements extends Model
 
     protected function getAnnouncements()
     {
-        $announcements = DB::table('announcements')->get();
+        $announcements = self::get();
 
         return response()->json(["announcements"=> $announcements]);
     }
 
     protected function getAnnouncement(Request $request)
     {
-        $announcement = DB::table('announcements')->where('id', $request["id"])->first();
+        $announcement = self::where('id', $request["id"])->first();
 
         return response()->json(["announcement"=> $announcement]);
     }

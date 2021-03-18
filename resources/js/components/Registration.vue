@@ -9,29 +9,25 @@
                           </li>
                       </ul>
                   </div>
-                        <input required type="email" v-model="form.email" class=" form-control mt-4" name="email"  autocomplete="email" placeholder="Email">
-                        <input required type="text" v-model="form.name" class=" form-control mt-4" name="name"  autocomplete="name" placeholder="Name">
-                        <input required type="password" v-model="form.password" class=" form-control mt-4" name="password"  placeholder="Password">
-                        <input required type="password"  v-model="form.password_confirmation" class=" form-control mt-4" name="password_confirmation"  placeholder="Confirm password">
-                        <div class="col-2"><label class="profile">Country</label></div>
-
-                                  <select v-on:change.prevent="getCity()" v-model="form.country" class="form-control country-city-form-reg" required>
-                                      <option selected disabled>Country</option>
-                                      <option v-for="option in options_country"  >
-                                          {{ option.name }}
-                                      </option>
-                                  </select>
-
-                                <div class="col-2"><label class="profile">City</label></div>
-
-                                        <select v-bind:disabled="isDisabled" v-model="form.city" class="form-control country-city-form-reg" required>
-                                              <option selected disabled>City</option>
-                                              <option v-for="option in options_city" >
-                                                    {{ option }}
-                                               </option>
-                                        </select>
-
-                          <button  type="submit" name="submit" class="btn-form sign-in m-3 btn" ><strong>Sign up</strong></button>
+                  <input required type="email" v-model="form.email" class=" form-control mt-4" name="email"  autocomplete="email" placeholder="Email">
+                  <input required type="text" v-model="form.name" class=" form-control mt-4" name="name"  autocomplete="name" placeholder="Name">
+                  <input required type="password" v-model="form.password" class=" form-control mt-4" name="password"  placeholder="Password">
+                  <input required type="password"  v-model="form.password_confirmation" class=" form-control mt-4" name="password_confirmation"  placeholder="Confirm password">
+                  <div class="col-2"><label class="profile">Country</label></div>
+                  <select v-on:change.prevent="getCity()" v-model="form.country" class="form-control country-city-form-reg" required>
+                      <option selected disabled>Country</option>
+                      <option v-for="option in options_country">
+                         {{ option.name }}
+                      </option>
+                  </select>
+                  <div class="col-2"><label class="profile">City</label></div>
+                      <select v-bind:disabled="isDisabled" v-model="form.city" class="form-control country-city-form-reg" required>
+                         <option selected disabled>City</option>
+                         <option v-for="option in options_city" >
+                             {{ option }}
+                         </option>
+                      </select>
+                  <button  type="submit" name="submit" class="btn-form sign-in m-3 btn" ><strong>Sign up</strong></button>
           </form>
     </div>
 </template>
@@ -48,7 +44,6 @@ export default {
                 password_confirmation: null,
                 country: null,
                 city: null,
-
             },
             user_errors: {},
             options_country: [],
@@ -56,7 +51,6 @@ export default {
             isDisabled: true
         }
     },
-
     methods: {
         save: function (e) {
             let vm = this
@@ -94,7 +88,7 @@ export default {
         },
     },
     beforeMount(){
-        this.getCountry()
+        this.getCountry();
     }
 }
 </script>

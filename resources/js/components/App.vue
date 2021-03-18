@@ -8,19 +8,14 @@
                 </button>
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-
                     <ul class="navbar-nav ml-auto">
-
                         <li   v-if="isHidden" class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                menu
-                            </a>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>Menu</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <router-link class="dropdown-item" to="/profile">Settings</router-link>
                                 <router-link class="dropdown-item" to="/announcements">Announcements</router-link>
                                 <a class="dropdown-item" v-on:click.prevent="logout()">Logout</a>
                                 <input type="hidden" name="_token" v-model="csrf">
-
                             </div>
                         </li>
                         <li  v-if="!isHidden" class="nav-item">
@@ -29,7 +24,6 @@
                         <li  v-if="!isHidden" class="nav-item">
                             <router-link class="dropdown-item" to="/registration">Registration</router-link>
                         </li>
-
                      </ul>
                 </div>
             </div>
@@ -73,7 +67,7 @@ export default {
         }
     },
     beforeMount(){
-        this.authCheck()
+        this.authCheck();
     }
 }
 </script>

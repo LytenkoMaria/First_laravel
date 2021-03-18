@@ -10,6 +10,7 @@ class UserController extends Controller
     public function authCheck()
     {
         $userAuth = Auth::check();
+
         return response()->json(["userAuth" => $userAuth]);
     }
 }

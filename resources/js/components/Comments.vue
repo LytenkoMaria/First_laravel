@@ -97,7 +97,6 @@ name: "Comments",
             axios.get('/api/comments/show/' + vm.announcementId)
                 .then(function (response) {
                      vm.comments = response.data.comments;
-                    console.log(vm.comments);
                 })
                 .catch(function (error) {
                     console.log(error.response.data.errors);
@@ -118,7 +117,7 @@ name: "Comments",
         },
     },
     created(){
-        this.showСomments()
+        this.showСomments();
     }
 }
 

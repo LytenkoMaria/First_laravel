@@ -2,51 +2,49 @@
 
     <div class="content p-3 text-white badge" align="center">
         <label class="sign-in"><h1>Profile</h1></label>
-            <div v-if="!isHidden" class="prof ">
-                <div class="row">
-                    <div class="col-12"><img :src="'/images/usersProfilePicture/' + user.picture" class="profile-img"></div>
-                    <div class="col-2"><label class="profile">Name</label></div>
-                    <div class="col-10"><input v-model="user.name" class=" form-control mt-4" name="name" readonly=""></input></div>
-                    <div class="col-2"><label class="profile">Email</label></div>
-                    <div class="col-10"><input v-model="user.email" class=" form-control mt-4" name="email" readonly=""></input></div>
-                    <div class="col-2"><label class="profile">Slack</label></div>
-                    <div class="col-10"><input v-model="user.slack_webhook" class=" form-control mt-4" name="slack" readonly=""></input></div>
-                    <div class="col-2"><label class="profile">Country</label></div>
-                    <div class="col-10"><input v-model="user.country" class=" form-control mt-4" name="country" readonly=""></input></div>
-                    <div class="col-2"><label class="profile">City</label></div>
-                    <div class="col-10"><input v-model="user.city" class=" form-control mt-4" name="city" readonly=""></input></div>
-                </div>
-                    <button  v-on:click="isHidden = !isHidden" type="button" name="submit" class="btn-form sign-in m-3 btn"><strong>Change</strong></button>
-            </div>
-
-            <div v-if="isHidden" class="change-prof">
+        <div v-if="!isHidden" class="prof">
+            <div class="row">
                 <div class="col-12"><img :src="'/images/usersProfilePicture/' + user.picture" class="profile-img"></div>
-                <input type="file"   @change="changeImg"  class="btn form-control-file load-img">
-                <form @submit.prevent="changeData()">
-                    <div class="row">
-                        <div class="col-2"><label class="profile">Name</label></div>
-                        <div class="col-10"><input v-model="user.name" required class=" form-control mt-4" name="name"></input> </div>
-                        <div class="col-2"><label class="profile">Email</label></div>
-                        <div class="col-10"><input v-model="user.email" required class=" form-control mt-4" name="email"></input></div>
-                        <div class="col-2"><label class="profile">Slack</label></div>
-                        <div class="col-10"><input v-model="user.slack_webhook" required class=" form-control mt-4" name="slack"></input></div>
-                        <select v-on:change.prevent="getCity()"  v-model="user.country" class="form-control country-city-form-profile">
-                            <option selected disabled>Country</option>
-                            <option v-for="option in options_country" >
-                                {{ option.name }}
-                            </option>
-                        </select>
-                        <select v-model="user.city" class="form-control country-city-form-profile" >
-                            <option selected disabled>City</option>
-                            <option v-for="option in options_city" >
-                                {{ option }}
-                            </option>
-                        </select>
-                    </div>
-                        <button type="submit" name="submit" class="btn-form sign-in m-3 btn"><strong>Save changes</strong></button>
-                </form>
+                <div class="col-2"><label class="profile">Name</label></div>
+                <div class="col-10"><input v-model="user.name" class=" form-control mt-4" name="name" readonly=""></input></div>
+                <div class="col-2"><label class="profile">Email</label></div>
+                <div class="col-10"><input v-model="user.email" class=" form-control mt-4" name="email" readonly=""></input></div>
+                <div class="col-2"><label class="profile">Slack</label></div>
+                <div class="col-10"><input v-model="user.slack_webhook" class=" form-control mt-4" name="slack" readonly=""></input></div>
+                <div class="col-2"><label class="profile">Country</label></div>
+                <div class="col-10"><input v-model="user.country" class=" form-control mt-4" name="country" readonly=""></input></div>
+                <div class="col-2"><label class="profile">City</label></div>
+                <div class="col-10"><input v-model="user.city" class=" form-control mt-4" name="city" readonly=""></input></div>
             </div>
-
+            <button  v-on:click="isHidden = !isHidden" type="button" name="submit" class="btn-form sign-in m-3 btn"><strong>Change</strong></button>
+        </div>
+        <div v-if="isHidden" class="change-prof">
+            <div class="col-12"><img :src="'/images/usersProfilePicture/' + user.picture" class="profile-img"></div>
+            <input type="file"   @change="changeImg"  class="btn form-control-file load-img">
+            <form @submit.prevent="changeData()">
+                <div class="row">
+                    <div class="col-2"><label class="profile">Name</label></div>
+                    <div class="col-10"><input v-model="user.name" required class=" form-control mt-4" name="name"></input> </div>
+                    <div class="col-2"><label class="profile">Email</label></div>
+                    <div class="col-10"><input v-model="user.email" required class=" form-control mt-4" name="email"></input></div>
+                    <div class="col-2"><label class="profile">Slack</label></div>
+                    <div class="col-10"><input v-model="user.slack_webhook" required class=" form-control mt-4" name="slack"></input></div>
+                    <select v-on:change.prevent="getCity()"  v-model="user.country" class="form-control country-city-form-profile">
+                        <option selected disabled>Country</option>
+                        <option v-for="option in options_country" >
+                            {{ option.name }}
+                        </option>
+                    </select>
+                    <select v-model="user.city" class="form-control country-city-form-profile" >
+                        <option selected disabled>City</option>
+                        <option v-for="option in options_city" >
+                            {{ option }}
+                        </option>
+                    </select>
+                </div>
+                <button type="submit" name="submit" class="btn-form sign-in m-3 btn"><strong>Save changes</strong></button>
+            </form>
+        </div>
     </div>
 
 </template>
@@ -64,9 +62,7 @@ export default {
             picturePath : null,
             attachment: null,
         }
-
     },
-
     methods: {
         getUserData: function (e) {
             let vm = this
@@ -76,7 +72,7 @@ export default {
                     vm.getCity();
                 })
                 .catch(function (error) {
-                   console.log(error.response.data.errors);
+                    console.log(error.response.data.errors);
                     vm.user_errors = error.response.data.errors;
                 })
         },
@@ -99,7 +95,6 @@ export default {
             const formData = new FormData()
             formData.append('attachment', uploadedFile)
             formData.append('id', vm.user.id)
-            console.log(uploadedFile)
             axios.post('/api/profile/update/img', formData, config )
                 .then(function (response) {
                     vm.user.picture = response.data.newPicture;

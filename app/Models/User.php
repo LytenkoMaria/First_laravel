@@ -41,20 +41,15 @@ class User extends Authenticatable
 
     public static function updateUserData(array $userData)
     {
-
-        $returnUpdateData = DB::table('users')
-            ->where('id', $userData["id"])
-            ->update(['name' => $userData["name"], 'email'=> $userData["email"], 'slack_webhook'=> $userData["slack_webhook"], 'country' => $userData["country"], 'city' => $userData["city"]]);
+        $returnUpdateData = self::where('id', $userData["id"])
+        ->update(['name' => $userData["name"], 'email'=> $userData["email"], 'slack_webhook'=> $userData["slack_webhook"], 'country' => $userData["country"], 'city' => $userData["city"]]);
 
         return response()->json(["status"=> "success"]);
     }
 
         public static function updateImg(array $userData)
         {
-
-            $returnUpdateData = DB::table('users')
-                ->where('id', $userData["id"])
-                ->update(['picture' => $userData["picture"]]);
+            $returnUpdateData = self::where('id', $userData["id"])->update(['picture' => $userData["picture"]]);
 
             return response()->json(["status"=> "success"]);
         }
